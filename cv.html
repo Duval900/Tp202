@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+</head>
+<body>
+     <nav class="block">
+         <div class="nom"><h4>BIENVENUE DANS LA CREATION DE VOTRE CV</h4></br>
+         </div> 
+                
+        </br></br></br>
+        <p><h4>appuyez sur le "choose file" pour changer l'image</h4></p>
+        <div class="profil">
+            <input type="file" data-index="0" onChange="swapImage(this)">
+            <img src="IMAGE.jpg" alt="mlm" data-index="0" width="100 %" height="100%" alt="mon image">
+            <div id="formulaire">
+
+               
+               
+                <br>
+            </div>
+        
+        <ul>
+               
+            <li><h2>information personnelles</h2>
+         <ol>
+             <li><a href="#A"><h1>veuillez entrer vos informations personnelles comme indiqué</a></h1></li>
+             
+         </ol></li>
+        </br>
+
+         <li><h2>Experiences Professionnelles</h2> <ol>
+             <li><a href="#B"><h4>entrez votre experience</h4></a></li></ol></li>
+
+            <li><h2>Langues</h2> <ol>
+                 <li><a href="#C"><h4>quelle langue parlez vous</h4></a></li></ol>
+                 <li><h2>HOBBY</h2> <ol>    
+             <li><a href="#D"><h4>entrez vos differents hobbys</h4></a></li>
+             <li><h2>couleur</h2> <ol>
+                <li><a href="#E"><h4>quelle couleur voulez vous</h4></a></li></ol> 
+         </ul>
+         <div class="footer"></div>
+     </nav>
+     <section>
+         <nav class="nav2">
+            <div id="head">
+                <div class="loader"></div>
+                <h1>Curriculum Vitae</h1>
+                <a href="" download="CV-pdf"><img src="cv_files/telecharger.png" alt="icon download" width="30px " height="30px"></a>
+            </div>
+         </nav>
+         <div class="conteneur">
+                
+                <div class="contenu">
+                    <h2 id="A">Informations personnelles</h2>
+                    <p><b>Nom : 
+                         
+                        <button id='b1'>Cliquez moi</button>
+                        <button id='b2'>Ajouter un paragraphe</button>
+                        <script>
+                        let ajouter = document.getElementById('b2');
+                        ajouter.addEventListener('click', ajout);
+                        function ajout(){
+                            var x=prompt ('tapez votre nom');
+                            alert('votre nom est ' + x );
+                        }
+                        </script></b></p>
+                    <p><b>Adresse : <button id='b3'>Cliquez moi</button>
+                        <button id='b4'>Ajouter un paragraphe</button>
+                        <script>
+                        let AJouter = document.getElementById('b4');
+                        AJouter.addEventListener('click', ajout);
+                        function ajout(){
+                            var y=prompt ('tapez votre adresse');
+                            alert('votre adresse est ' + y );
+                        }
+                        </script></b></p>
+                        
+                    <p><b>Mail :</b><a href="mailto:joelleornelle@Gmail.com"><button id='b3'>Cliquez moi</button>
+                        <button id='b4'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjOuter = document.getElementById('b4');
+                        AjOuter.addEventListener('click', ajout);
+                        function ajout(){
+                            var y=prompt ('tapez votre mail');
+                            alert('votre mail est ' + y );
+                        }
+                        </script></a></p>
+                    <p><b>Tel :<button id='b5'>Cliquez moi</button>
+                        <button id='b6'>Ajouter un paragraphe</button>
+                        <script>
+                        let Ajoute = document.getElementById('b6');
+                        Ajoute.addEventListener('click', ajout);
+                        function ajout(){
+                            var u=prompt ('tapez votre numero de telephone');
+                            alert('votre numero est ' + u );
+                        }
+                        </script></b></p>
+                    <p><b>Nationalite :<button id='b7'>Cliquez moi</button>
+                        <button id='b8'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjouteR = document.getElementById('b8');
+                        AjouteR.addEventListener('click', ajout);
+                        function ajout(){
+                            var A=prompt ('tapez votre nationnalité');
+                            alert('votre nationnalité est ' + A );
+                        }
+                        </script></b></p>
+                    <p><b>Date De Naissance :<button id='b9'>Cliquez moi</button>
+                        <button id='b10'>Ajouter un paragraphe</button>
+                        <script>
+                        let Ajouter = document.getElementById('b10');
+                        Ajouter.addEventListener('click', ajout);
+                        function ajout(){
+                            var K=prompt ('tapez votre date de naissance');
+                            alert('votre date de maissance est ' + K );
+                        }
+                        </script></b></p>
+                    <p><b>Region d'origine :<button id='b11'>Cliquez moi</button>
+                        <button id='b12'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjoUter = document.getElementById('b12');
+                        AjoUter.addEventListener('click', ajout);
+                        function ajout(){
+                            var L=prompt ('tapez votre region origine');
+                            alert('votre adresse est ' + L );
+                        }
+                        </script></b></p>
+                    <p><b>diplome apres bac :<button id='b13'>Cliquez moi</button>
+                        <button id='b14'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjouTer = document.getElementById('b14');
+                        AjouTer.addEventListener('click', ajout);
+                        function ajout(){
+                            var L=prompt ('auelle diplomes avez vous apres le bac');
+                            alert('vos diplomes sont ' + L );
+                        }
+                        </script></b></p>
+                    <p><b>ecole :<button id='b15'>Cliquez moi</button>
+                        <button id='b16'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjoutEr = document.getElementById('b16');
+                        AjoutEr.addEventListener('click', ajout);
+                        function ajout(){
+                            var P=prompt ('tapez vos ecoles');
+                            alert('vos ecoles sont ' + P );
+                        }
+                        </script></b></p>
+                </div><hr><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><hr><br>
+                <div class="contenu">
+                   
+                </div>
+                
+               
+                
+                <hr>
+                <div class="contenu">
+                    <h2 id="B">competences Professionnelles</h2><br>
+                    <p><b>entrez vos differentes competences professionnelles:<button id='b3'>Cliquez moi</button>
+                        <button id='b17'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjouTEr = document.getElementById('b17');
+                        AjouTEr.addEventListener('click', ajout);
+                        function ajout(){
+                            var O=prompt ('tapez vos differentes competences professionnels');
+                            alert('vos competences sont ' + O );
+                        }
+                        </script> <div class="contenu">
+                        
+
+                        
+                    </div></b></p>
+                    
+                    
+                </div>
+                <div class="contenu">
+                    <h2 id="C">langue</h2><br>
+                    <p>quelle langue voulez vous parlez:<button id='b3'>Cliquez moi</button>
+                        <button id='b18'>Ajouter un paragraphe</button>
+                        <script>
+                        let AjOter = document.getElementById('b18');
+                        AjOter.addEventListener('click', ajout);
+                        function ajout(){
+                            var V=prompt ('quelle langues vous parlez ');
+                            alert('vous parlez' + V );
+                        }
+                        </script></p>
+                </div>
+              
+                
+                <div class="contenu">
+                    <h2 id="D">hobbys</h2><br>
+                    <p>entrez vos hobbys ici:<button id='b3'>Cliquez moi</button>
+                        <button id='b19'>Ajouter un paragraphe</button>
+                        <script>
+                        let Ajoter = document.getElementById('b19');
+                        Ajoter.addEventListener('click', ajout);
+                        function ajout(){
+                            var I=prompt ('tapez vos hobbys ');
+                            alert('vos hobbys sont ' + I );
+                        }
+                        </script></p>
+                </div>
+                
+                
+                <div class="contenu">
+                    <h2 id="E">couleur</h2><br>
+                    <p>entrez les couleurs:<button id='b3'>Cliquez moi</button>
+                        <button id='b20'>Ajouter un paragraphe</button>
+                        <script>
+                        let Ajter = document.getElementById('b20');
+                        Ajter.addEventListener('click', ajout);
+                        function ajout(){
+                            var T=prompt ('quelle couleur voulez vous');
+                            alert('vous voulez' + T + 'couleurs' );
+                        }
+                        </script></p>
+                </div>
+    
+     </section>
+     <script >
+        var URL = window.URL || window.webkitURL
+       
+       window.swapImage = function (elm) {
+               
+           var index = elm.dataset.index
+           // URL.createObjectURL is faster then using the filereader with base64
+           var url = URL.createObjectURL(elm.files[0])
+           document.querySelector('img[data-index="'+index+'"]').src = url;
+       
+           }
+      
+  </script>
+   
+
+</body>
+</html>
