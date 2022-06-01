@@ -1,0 +1,437 @@
+   /*--------------------css----------------------------*/
+*
+{
+    margin: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+audio
+{
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0) 2px 4px;
+    background-color: rgb(59, 62, 255);
+}
+video
+{
+    margin-left: 200px;
+}
+/*---------------------------------------Barre de Navigation verticale------------------------------*/
+.block
+{
+    border: 2px rgb(255, 255, 255) solid;
+    padding-bottom: 0%;
+    width: 30%;
+    background-color: rgba(157, 151, 214, 0.658);
+    max-height: max-content;
+}
+.nom 
+{
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 1px;
+    background-color: rgba(68, 68, 238, 0.973);
+    border: blue 1px solid;
+    color: white;
+    padding-bottom: 29%;
+}
+
+ .nom img
+{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: double 3px white;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+h4
+{
+    padding-top: 18px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul
+{
+    list-style-type: none;
+    text-indent: 4%;
+    margin-top: 6%;
+}
+ul a
+{
+    text-decoration: none;
+    color:rgb(67, 67, 247);
+    font-family: cursive;
+}
+/*-------effet de zoom-------------*/
+.block  li :hover
+{
+    background-color: rgb(68, 68, 202);
+    color: rgb(248, 248, 248);
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+    transform: scale(1.08,1.05);
+}
+.block li
+{
+    overflow: hidden;
+}
+/*------Fin effet de Zoom------------*/
+nav a h3
+{
+ text-shadow: rgb(255, 238, 208) 2px 2px;
+}
+.footer
+{
+    width: 99.7%;
+    border-left-style: inset;
+    border-right-style: inset;
+    background-color: rgba(68, 68, 238, 0.973);
+    border: blue 1px solid;
+    padding: 3%; 
+    border-top-left-radius: 5%;  
+}
+.block
+{
+    display: inline-block;
+    position: absolute;
+}
+/*-----------------------------------------Fin barre de navigation--------------------------------*/
+
+/*-----------------------------------------Delimitation du contenu--------------------------------*/
+section
+{
+    display: inline-block;
+    position: absolute;
+    width: 68.5%;
+    margin-left: 30.4%;
+    margin-top: 0.2%;
+}
+.conteneur
+{
+    height: 580px;
+    overflow: scroll;
+}
+/*----------------------------------------Fin du deliminteur de contenu---------------------------*/
+
+/*----------------------------------------Barre de navigation Horizontale-------------------------*/
+ .nav2
+{
+    border: 2px rgb(255, 255, 255) solid;
+    width: 100%;
+    background-color: rgba(157, 151, 214, 0.658);
+    background: linear-gradient( rgb(218, 218, 255),rgb(40, 40, 255) ,rgb(218, 218, 255));
+}
+.nav2 #head
+{
+    display: inline-flex ;
+    padding: 3%;
+    border: solid rgb(226, 226, 226) 3px;
+    box-shadow: rgb(92, 92, 92) 1px -2px 1px ;
+    width: 100%;
+    align-items: center;
+}
+.nav2 #head .loader
+{
+    border: 16px solid lightgrey;
+    /*border-top: 16px solid blue;*/
+    border-radius: 50%;
+    width: 20px;
+    animation: load 30s linear  ;
+    margin-left: 5%;
+}
+@keyframes load
+{
+    15%{border-top: 16px solid blue;}
+    30%{border-right: 16px solid blue;}
+    45%{border-right: 16px solid blue;}
+    60%{border-bottom: 16px solid blue;}
+    75%{border-bottom: 16px solid blue;}
+    85%{border-left: 16px solid blue;}
+    100%{border-top: 16px solid blue;}
+}
+.nav2 #head h1
+{
+    margin-left: 26%;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 1px 5px;
+    font-size: x-large;
+}
+.nav2 #head a
+{
+ margin-left: 30%;  
+ text-decoration: none;
+ color: rgb(236, 241, 245);
+}
+.nav2 #head a img:hover
+{
+    image-rendering: optimizeQuality;
+    border:rgb(82, 80, 194)  1px outset ;
+}
+.nav2 #head a img:active
+{
+    image-rendering: optimizeQuality;
+    border:rgb(80, 83, 250)  2px inset ;
+    box-shadow: rgb(107, 107, 107) -1px 2px;
+}
+/*-----------------------------------------Fin barre de navigation Horizontale---------------------*/
+
+/*-----------------------------------------Debut des informations du sujeet------------------------*/
+.contenu
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 1%;
+}
+.contenu p
+{
+   margin-top: 3%;
+   margin-bottom: 2%;
+   font-family: fantasy; 
+   font-size:larger ;
+}
+#dash
+{
+    border: dashed rgb(138, 138, 138) 2.21px;
+}
+hr
+{
+    border: solid rgb(173, 173, 173) 2px; 
+}
+  .text
+{
+    padding-left: 25%;
+}
+.text sub
+{
+    font-family: fantasy;
+    font-size: small;
+}
+.percent
+{
+    display: inline-block;
+    position: relative;
+    border: rgb(64, 67, 255) 6px solid;
+    border-radius: 50%;
+    width: 6px;
+    margin-left: 15px;
+    left: 5%;
+}
+.percent2
+{
+    display: inline-block;
+    position: relative;
+    border: rgb(145, 146, 228,0.8) 6px solid;
+    border-radius: 50%;
+    width: 6px;
+    margin-left: 15px;
+    left: 5%;
+}
+.percent3
+{
+    display: inline-block;
+    position: relative;
+    border-color: rgb(64, 67, 255);
+    border-width: 6px;
+    border-style: solid;
+    border-right: solid 6px rgb(145, 146, 228,0.8);
+    border-top: solid 6px  rgb(145, 146, 228,0.8) ;
+    border-radius: 50%;
+    width: 6px;
+    margin-left: 15px;
+    left: 5%;   
+}
+.c100
+{
+    border: rgb(71, 120, 184) solid 15px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    width: 70%;
+    left: 17%;
+}
+.c60
+{
+    border: rgb(71, 120, 184) solid 15px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    width: 70%;
+    left: 17%; 
+}
+.c01
+{
+   
+    border: rgb(71, 120, 184) solid 5px;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    width: 95%;  
+}
+.c600
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 15px;
+    width:24% ;
+    left: 63%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.c01gris80
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 5px;
+    width:20% ;
+    left: 74%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 0.5%;
+}
+.c01gris50
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 5px;
+    width:48% ;
+    left: 46%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 0.4%;
+}
+.c01gris60
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 5px;
+    width:35% ;
+    left: 59%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 0.5%;
+}
+.c01gris40
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 5px;
+    width:56% ;
+    left: 38%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 0.5%;
+}
+.c200
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 15px;
+    width: 50% ;
+    left: 37%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;  
+}
+.c500
+{
+    display: inline-block;
+    position: absolute;
+    border: gray solid 15px;
+    width: 36% ;
+    left: 51%;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;  
+}
+.prct
+{
+    margin-left: 80%;
+}
+.prct2
+{
+  margin-left:76% ;  
+}
+.prct3
+{
+    margin-left:79% ; 
+}
+.prct4
+{
+    margin-left:77% ; 
+}
+.pr100
+{
+    margin-left: 81%; 
+}
+.pr1000
+{
+    margin-left: 80%; 
+    }
+.pr1001
+{
+    margin-left: 83%; 
+}
+.first img
+{
+    border-radius: 50%;
+    border: rgb(105, 105, 105) double 2px;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(94, 94, 94) 2px 4px 5px 4px;
+}
+.first .img2 
+{
+    
+    margin-left: 65%;
+}
+.first .text2
+{
+    margin-left: 65%;
+}
+.second img
+{
+    border-radius: 50%;
+    border: rgb(105, 105, 105) double 2px;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(94, 94, 94) 2px 4px 5px 4px;
+}
+.third img
+{
+    border-radius: 50%;
+    border: rgb(105, 105, 105) double 2px;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(94, 94, 94) 2px 4px 5px 4px;
+    margin-left: 65%;
+}
+.third figcaption
+{
+    margin-left: 41%;
+}
+.first figcaption
+{
+    padding-left: 2%;
+}
+.second figcaption
+{
+    padding-left: 2%;
+}
+.third figcaption
+{
+    padding-left: 27%;
+}
+.body{
+    background-image: url(IMG.jpg);
+    background: transparent;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+</head>
+<body>
+     <nav class="block">
+         <div class="nom"><h4>BIENVENUE DANS LA CREATION DE VOTRE CV</h4></br>
+         </div> 
+                
+        </br></br></br></br>
+        
+
+               
+               
+                <br>
+            </div>
+        
+        <ul>
+               
+            <li><h2>information personnelles</h2>
+         <ol>
+             <li><a href="#A"><h1>veuillez entrer vos informations personnelles comme indiqué</a></h1></li>
+             
+         </ol></li>
+        </br>
+
+         <li><h2>Experiences Professionnelles</h2> <ol>
+             <li><a href="#B"><h4>entrez votre experience</h4></a></li></ol></li>
+
+            <li><h2>Langues</h2> <ol>
+                 <li><a href="#C"><h4>quelle langue parlez vous</h4></a></li></ol></li>
+                 <li><h2>HOBBY</h2> <ol>    
+             <li><a href="#D"><h4>entrez vos differents hobbys</h4></a></li></ol></li>
+             <li><h2>couleur</h2> <ol>
+                <li><a href="#E"><h4>quelle couleur voulez vous</h4></a></li></ol> 
+         </ul>
+         <div class="footer"></div>
+     </nav>
+     <section>
+         <nav class="nav2">
+            <div id="head">
+                <div class="loader"></div>
+                <h1>Curriculum Vitae</h1>
+                <a href="" download="CV-pdf"><img src="cv_files/telecharger.png" alt="icon download" width="30px " height="30px"></a>
+            </div>
+         </nav>
+         <div class="conteneur">
+                
+                
+                
+            <div class="profil">
+            <input type="file" data-index="0" onChange="swapImage(this)">
+            <img src="" alt="mlm" data-index="0" width="100 %" height="100%" alt="mon image">
+            <script>
+                document.addEventListener("DOMContentLoaded", ()=>{
+                const recentImageDataUrl = localStorage.getItem("photo");
+
+                if(recentImageDataUrl) {
+                      document.querySelector('#imagep').setAttribute("src",recentImageDataUrl);
+                             }
+                });
+            </script>
+            
+            <div id="formulaire">
+                    <h2 id="A">Informations personnelles</h2>
+                    <b><form><label for="nom"> Nom: </label><input type="text" id="nom" nom="user_nom">
+                    <script> let nom = document.getElementById('b2');
+                    enregistrez_vos_informations.addEventListener('click', Ajout);
+                    
+                    function Ajout() {
+                        const nom = document.getElementById("nom")
+                        const noms = document.getElementById("noms");
+                        const key = "nom";
+                        const value = nom.value;
+                        console.log(key);
+                        console.log(value);
+                        if (value) {
+                            localStorage.setItem(key, value);
+                            location.reload();
+                        }
+                    };
+                    const Noms = document.getElementById("noms");
+                    Noms.innerHTML = localStorage.getItem("nom");
+                    </script>
+                  <br>  <label for="no"> Prenom: </label><input type="text" id="no" no="user_no">
+                    
+                    
+                
+                  <br><label for="adresse"> Adresse: </label><input type="text" id="adresse" adresse="user_adresse">
+                    
+                  <br><label for="emailInput"> mail: </label><input type="email" id="emailInput">
+                    
+                  <br><label for="tel"> tel: </label><input type="number" id="tel" tel="user_tel">
+                        
+                  <br><label for="Nationalite"> nationnalité: </label><input type="text" id="Nationalite" Nationalite="user_Nationalite">
+                        
+                  <br><label for="date_naissance"> Date de naissance : </label><input type="date" id="date_naissance" date_naissance="user_date_naissance">
+                     
+                  <br><label for="region"> Region d'origine : </label><input type="text" id="region"  region="user_region">
+                    
+                        
+                  <br><label for="ad"> diplome_apres_bac: </label><input type="text" id="ad" ad="user_ad">
+                    
+                  <br><label for="ae"> ecole: </label><input type="text" id="ae" ae="user_ae">
+                        
+                  <br> <input name="email" type="email" id="email" required="" placeholder="email">
+                        
+                        <button onclick="store()" type="button">information corrette </button>
+                        <script type="email/javascript">
+                            function store(){
+                                var email= document.getElementById("email");
+                                localStorage.setItem("email", email.value);
+                            }
+                        </script>
+
+             </form></b>    
+                </div><hr><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><hr><br>
+                <div class="contenu">
+                   
+                </div>
+                
+               
+                
+                <hr>
+                <div class="contenu">
+                    <h2 id="B">competences Professionnelles</h2><br>
+                    <div class="popup1" id="popup-9">
+                        <div class="overlay1"></div>
+                        <div class="content1">
+                            <div class="close-btn1" onclick="parc()">&times;</div>
+                            <h2>Experience</h2>
+                            <input class="ins" type="nuber" id="andebut" placeholder="Annee De Debut">
+                            <input class="ins" type="number" id="anfin" placeholder="Annee De Fin">
+                            <textarea name="" id="contenu"  cols="15" rows="8" class="textareas" placeholder="Contenu"></textarea>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><hr><br>
+                <div class="contenu">
+                   
+                </div>
+                <div class="contenu">
+                    <h2 id="C">langue</h2><br>
+                    
+    <div class="popup" id="popup-10">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="prgm()">&times;</div>
+            <h2>voici les langues que je parles: </h2>
+            <input class="ins" type="text" id="lngprgm" placeholder="Les differentes langues">
+           
+            <select class="selectpicker btn-dark" id="niv" >
+                <optgroup label="comprehension">
+                <option value="assez_bien">assez bien</option>
+                <option value="bien">bien</option>
+                <option value="Exellent">Exellent</option>
+                </optgroup>
+                </select>
+                <select class="selectpicker btn-dark" id="iv" >
+                    <optgroup label="ecrire">
+                    <option value="assez_bien"> assez bien</option>
+                    <option value="bien">bien</option>
+                    <option value="Exellent">Exellent</option>
+                    </optgroup>
+                    </select>
+                <select class="selectpicker btn-dark" id="nv" >
+                        <optgroup label="parler">
+                        <option value="assez_bien">assez bien</option>
+                        <option value="bien">bien</option>
+                        <option value="Exellent">tres bien</option>
+                        </optgroup>
+                </select>
+                <select class="selectpicker btn-dark" id="n" >
+                    <optgroup label="lire">
+                    <option value="assez_bien">assez bien</option>
+                    <option value="bien">bien</option>
+                    <option value="Exellent">tres bien</option>
+                    </optgroup>
+                    </select>
+            
+        </div>
+    </div>
+                    
+                </div>
+              
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><hr><br>
+                <div class="contenu">
+                   
+                </div>
+                <div class="contenu">
+                    <h2 id="D">hobbys</h2><br>
+                    <b><form><label for="as"> Voici mes hobbys: </label><input type="text" id="as" as="user_as">
+                    </form></b>
+                    
+                </div>
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><hr><br>
+                <div class="contenu">
+                   
+                </div>
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><hr><br>
+                <div class="contenu">
+                   
+                </div>
+               
+                <div class="contenu">
+                    <h2 id="E">couleur</h2><br>
+                    <b><form><label for="ase"> choisisez une couleur: </label><input type="text" id="ase" ase="user_se">
+                    </form></b>
+                    
+                </div><br><br><br><br>
+                
+               
+                        <button id='b2'>enregistrez_vos_informations</button>
+                        <script>
+                        let enregistrez_vos_informations = document.getElementById('b2');
+                        enregistrez_vos_informations.addEventListener('click', ajout);
+                        function ajout(){
+                            alert('vos informations sont bien enregistré' );
+                            var x=prompt ('tapez votre pseudo');
+                            alert('votre pseudo est ' + x );
+                            
+                            
+                        }
+                        </script>
+                        <input type="file" id="bannerImg" />
+                        <img src="" id="tableBanner" />
+    
+     </section>
+     <script >
+        var URL = window.URL || window.webkitURL
+       
+       window.swapImage = function (elm) {
+               
+           var index = elm.dataset.index
+           // URL.createObjectURL is faster then using the filereader with base64
+           let url = URL.createObjectURL(elm.files[0])
+           document.querySelector('img[data-index="'+index+'"]').src = url;
+           
+localStorage.setItem("url", url);
+       
+           }
+      
+  </script>
+  
+  
+   
+
+</body>
+</html>
