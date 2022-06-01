@@ -1,0 +1,22 @@
+#dashboard{
+    display: table-row;
+}
+#homeMenu,#aboutMe,#contact,#education,#experience,#language,#mySkill,#personalProject,#service{
+    
+    transition: 1s;
+    width: 120px;
+    height: 2%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+        &{
+            padding-left: 5%;
+        }
+        & .isPointed{
+            width: 5%;
+            background-color: crimson;
+            transition: 1s;
+        }
+    }
+}

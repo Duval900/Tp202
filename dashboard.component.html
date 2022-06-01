@@ -1,0 +1,167 @@
+<div class="container float-start mx-5 mt-0" style="background-color: #6610f2;border-radius: 25px; width: 250px; position: static;">
+    
+    <div class="text-center float-start mt-5 d-flex align-items-center mx-5  ">
+        <img (click)="add()" src="../../assets/Blaise.png"  style="width: 120px;height:90px" class="rounded-circle" alt="...">
+    </div>
+    <input type="file" id="form12" class="form-control" *ngIf="addPicture"  />
+    <div class="row pt-3">
+        <h3 [style]="defaultStyle" class="ms-3" (click)="addN()"> {{nom}} <span style="color: rgb(220, 0, 88);">.</span></h3>
+        <div class="form-outline d-flex" *ngIf="addName">
+            <input type="text" id="form12" class="form-control" [(ngModel)]="newName"/>
+            <label class="form-label" for="form12"><p style="color: white;">Name</p></label>
+            <button type="button" (click)="modifyName()" class="btn btn-outline-light" data-mdb-ripple-color="dark">Modify_name </button>
+          </div>
+        <p [style]="defaultStyle" class="ms-3"> Js Developer</p>
+    </div>
+    <div class="row mt-2" id="homeMenu">
+        <div class="d-flex flex-row">
+            <div class="p-1 float-start" id="isPointed"></div>
+            <div class="p-2"><i class=" fas fa-archway" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/home']" [style]="defaultStyle">Home</a ></div>
+          </div>
+    </div>
+    <div class="row" id="aboutMe">
+        <div class="d-flex flex-row ">
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class="fas fa-male" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/about']" [style]="defaultStyle">About</a ></div>
+          </div>
+    </div>
+    
+    <div class="row" id="experience">
+        <div class="d-flex flex-row ">
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class=" fas fa-hammer" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/experience']" [style]="defaultStyle">Experience</a ></div>
+          </div>
+    </div>
+    <div class="row" id="education">
+        <div class="d-flex flex-row ">
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class=" fas fa-graduation-cap" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/education']" [style]="defaultStyle">Education</a></div>
+          </div>
+    </div>
+    <div class="row" id="mySkill">
+        <div class="d-flex flex-row ">
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class=" fab fa-git-alt" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/skill']" [style]="defaultStyle">Skill</a ></div>
+          </div>
+    </div>
+    <div class="row" id="personalProject">
+        <div class="d-flex flex-row ">
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class=" fas fa-hammer" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/personalProject']" [style]="defaultStyle">Projects</a ></div>
+          </div>
+    </div>
+    <!-- <div class="row" id="service">
+        <div class="d-flex flex-row " >
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class=" fas fa-hands-helping" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/service']" [style]="defaultStyle">Services</a ></div>
+          </div>
+    </div> -->
+    <div class="row mb-3" id="contact">
+        <div class="d-flex flex-row ">
+            <div class="p-1" id="isPointed"></div>
+            <div class="p-2"><i class=" fas fa-phone" [style]="defaultStyle"></i>
+                </div>
+            <div class="p-2"><a [routerLink]="['/contact']" [style]="defaultStyle">Contact</a></div>
+          </div>
+    </div>
+    <div class="text-center mb-3">
+        <button type="button" class="btn btn-danger btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+    
+        <button type="button" class="btn btn-danger btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+    
+        <button type="button" class="btn btn-danger btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+    
+        <button type="button" class="btn btn-danger btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="dashboard" [style]="defaultBackgroundColor" style="
+height: 500px;
+margin-top: 58px;
+margin-left: 400px;
+margin-right: 30px;
+">
+<img src="" alt="">
+<h2></h2>
+<h6></h6>
+<div id="homeMenu">
+    <div class="isPointed"></div>
+    <i class=" fas fa-archway" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">Home</p>
+</div>
+<div id="aboutMe">
+    <div id="isPointed" ></div>
+    <i class="fas fa-male" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">About</p>
+</div>
+<div id="service">
+    <div class="isPointed"></div>
+    <i class="fas fa-hands-helping" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">Services</p>
+</div>  
+<div id="experience">
+    <div class="isPointed"></div>
+    <i class="fas fa-hammer" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">Experience</p>
+</div>
+<div id="education">
+    <div class="isPointed"></div>
+    <i class="fas fa-graduation-cap" [style]="defaultStyle"></i>
+     <p [style]="defaultStyle">Education</p>
+</div>
+<div id="mySkill">
+    <div class="isPointed"></div>
+    <i class="fab fa-git-alt" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">My Skill</p>
+</div>
+<div id="personalProject">
+    <div class="isPointed"></div>
+    <i class="fas fa-hammer" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">Project</p>
+</div>
+<div id="language">
+    <div class="isPointed"></div>
+    <i class="fab fa-leanpub" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle">Language</p>
+</div>
+<div id="contact">
+    <div class="isPointed"></div>
+    <i class="fa-solid fa-phone" [style]="defaultStyle"></i>
+    <p [style]="defaultStyle"  >Contact</p>
+</div>
+</div> -->
